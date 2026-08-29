@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+// Definição do serviço
+service BenchmarkService {
+    // Método remoto exigido no experimento
+    rpc Enviar (Mensagem) returns (Confirmacao);
+}
+
+// A mensagem enviada pelo cliente (carga útil)
+message Mensagem {
+    bytes payload = 1;
+}
+
+// A mensagem retornada pelo servidor
+message Confirmacao {
+    int32 tamanho_recebido = 1;
+    string timestamp = 2;
+}
