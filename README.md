@@ -1,6 +1,9 @@
 <h1>Projeto de Sistemas Distribuídos - Experimento gRPC (UFF)</h1>
 
 <h2>Arquivos Base colocados por vitto baroni </h2>
+<br>
+<p><strong>ANTES DE TUDO, DEEM UM GIT CLONE NESSE REPOSITORIO OU COPIEM TODOS OS ARQUIVOS NA MÃO, FICA A CRITÉRIO DE VOCÊS</strong></p>
+<br>
 <ul>
     <li><strong><code>benchmark.proto</code>:</strong> É o nosso "contrato". Ele define as regras de comunicação e o formato dos dados trocados entre o cliente e o servidor.</li>
     <li><strong><code>server.py</code>:</strong> É a lógica do servidor remoto que recebe os bytes, calcula o tamanho do payload e devolve um timestamp UTC.</li>
